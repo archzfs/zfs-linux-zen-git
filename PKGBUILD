@@ -17,10 +17,10 @@
 #
 pkgbase="zfs-linux-zen-git"
 pkgname=("zfs-linux-zen-git" "zfs-linux-zen-git-headers")
-_commit='d9cb42da999e77a2ea3ee5488a5ca0f4c27db2fe'
-_zfsver="2024.01.19.r8980.gd9cb42da99"
-_kernelver="6.7.zen3-1"
-_kernelver_full="6.7.0.zen3-1"
+_commit='a4bf6baaeb70a01a4c13fd6139ebdc97bad172e9'
+_zfsver="2024.01.23.r8982.ga4bf6baaeb"
+_kernelver="6.7.1.zen1-1"
+_kernelver_full="6.7.1.zen1-1"
 _extramodules="${_kernelver_full/.zen/-zen}-zen"
 
 pkgver="${_zfsver}_$(echo ${_kernelver} | sed s/-/./g)"
@@ -29,7 +29,7 @@ makedepends=("linux-zen-headers=${_kernelver}" "git")
 arch=("x86_64")
 url="https://openzfs.org/"
 source=("git+https://github.com/openzfs/zfs.git#commit=${_commit}" "linux-6.7-compat.patch")
-sha256sums=("SKIP" "5afd5ce236dfe0eb96abbe61a61c211623cb4a89c9fbb0be5f9f400a0970719e")
+sha256sums=("SKIP" "43bca1a6717bfc77d42a4c51656c38674c6be8d7ec46f04c7febcdafd9295916")
 license=("CDDL")
 depends=("kmod" "zfs-utils-git=${_zfsver}" "linux-zen=${_kernelver}")
 
