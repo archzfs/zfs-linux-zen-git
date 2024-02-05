@@ -17,10 +17,10 @@
 #
 pkgbase="zfs-linux-zen-git"
 pkgname=("zfs-linux-zen-git" "zfs-linux-zen-git-headers")
-_commit='78e8c1f844cb512607f25af44149c41ba7819abc'
-_zfsver="2024.01.26.r8988.g78e8c1f844"
-_kernelver="6.7.2.zen1-1"
-_kernelver_full="6.7.2.zen1-1"
+_commit='06e25f9c4b0841e450e411bf270c7aa92c04c573'
+_zfsver="2024.02.02.r9003.g06e25f9c4b"
+_kernelver="6.7.3.zen1-2"
+_kernelver_full="6.7.3.zen1-2"
 _extramodules="${_kernelver_full/.zen/-zen}-zen"
 
 pkgver="${_zfsver}_$(echo ${_kernelver} | sed s/-/./g)"
